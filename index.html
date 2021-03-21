@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link google font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <!--linkfontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <!--link css-->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Spotify App</title>
+</head>
+<body>
+    <!--MAIN CONTENT-->
+    <main class="main-window flex row">
+        <!--SIDEBAR-->
+        <aside class="sidebar grow-0">
+            <!--Logo-->
+            <div class="spotify-logo">
+                <img class="big-logo" src="./img/logo.svg" alt="Logo Spotify">
+                <img class="little-logo" src="./img/logo-small.svg" alt="Logo Spotify">  
+            </div>
+            <!--menu (top sec)-->
+            <div class="menu flex col">
+                <nav class="nav-menu flex col">
+                    <div class="bold nav-menu-icons nav-menu-icons-hover flex">
+                        <img src="./img/home.svg" alt=""> 
+                        <span>Home</span>
+                    </div>
+                    <div class="bold nav-menu-icons nav-menu-icons-hover flex">
+                        <img src="./img/search.svg" alt="">
+                        <span>Cerca</span>
+                    </div>
+
+                    <div class="bold nav-menu-icons nav-menu-icons-hover flex">
+                        <img src="./img/libreria.svg" alt="">
+                        <span>La tua libreria</span>                     
+                    </div>
+
+                    <!--playlist (mid sec)-->
+                    <h3>playlist</h3>
+                    <div class="bold nav-menu-icons playlist">
+                        <a href=""><i class="fas fa-plus-square"></i> Crea Playlist</a>
+                    </div>
+                    <ul class="bold">
+                        <li><a href=""> Discover Weekly</a></li>
+                        <li><a href=""> Zecchino d'Oro</a></li>
+                        <li><a href=""> Pina la filip-Pina</a></li>
+                        <li><a href=""> Piangere in silenzio</a></li>
+                        <li><a href=""> Piangere forte</a></li>
+                        <li><a href=""> Andiamo a comandare</a></li>
+                        <li><a href=""> Pop Sanremese</a></li>
+                    </ul>
+                </nav>
+                
+                <!--user and app sec.-->
+                <div class="sidebar-bottom flex col">
+                    <div class="nav-menu-icons install-app flex">
+                        <img src="./img/download.svg" alt="">
+                        <span>Installa app</span>
+                    </div>
+                    <div class="nav-menu-icons user flex">
+                        <img src="./img/profile.svg" alt="">
+                        <span>John Doe</span>
+                    </div>
+                </div>
+
+            </div>
+        </aside>
+
+        <!--CONTENT-->
+        <div class="content">
+            <!--top bar-->
+            <div class="content-top-bar">
+                <div class="bold btn-upgrade">effettua l'upgrade</div>
+            </div>
+
+            <!--nav albums-->
+            <div class="scrollable">
+                <nav class="content-menu flex row">
+                    <ul class="bold list">
+                        <li><a href="">in evidenza</a></li>
+                        <li><a href="">podcast</a></li>
+                        <li><a href="">classifiche</a></li>
+                        <li><a href="">generi e mood</a></li>
+                        <li><a href="">nuove uscite</a></li>
+                        <li><a href="">scopri</a></li>
+                    </ul>
+                </nav>
+                <!--Recently-->
+                <section class="content-album">
+                    <h2>Recently played</h2>
+                    <ul class="album-list">
+                        <li class="song">
+                            <div class="song-img">
+                                <img src="./img/metal_lifting.jpg" alt="">
+                                <div class="overlay"><i class="far fa-play-circle"></i></div>
+                            </div>
+                            <h3>Heavy Metal</h3>
+                            <p>Subtitle</p>
+                        </li>
+                        <li class="song">
+                            <div class="song-img">
+                                <img src="./img/stranger.jpeg" alt="">
+                                <div class="overlay"><i class="far fa-play-circle"></i></div>
+                            </div>
+                            <h3>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
+                            <p>Kyle Dixon & Michael Stein</p>
+                        </li>
+                        <li class="song">
+                            <div class="song-img">
+                                <img src="./img/aquietplace.jpeg" alt="">
+                                <div class="overlay"><i class="far fa-play-circle"></i></div>
+                            </div>
+                            <h3>A Quiet Place</h3>
+                            <p>Subtitle</p>
+                        </li>
+                        <li class="song">
+                            <div class="song-img">
+                                <img src="./img/split.jpeg" alt="">
+                                <div class="overlay"><i class="far fa-play-circle"></i></div>
+                            </div>
+                            <h3>Split</h3>
+                            <p>Subtitle</p>
+                        </li>
+                        <li class="song">
+                            <div class="song-img">
+                                <img src="./img/cure.jpeg" alt="">
+                                <div class="overlay"><i class="far fa-play-circle"></i></div>
+                            </div>
+                            <h3>A Cure for Wellness</h3>
+                            <p>Subtitle</p>
+                        </li>
+                        <li class="song">
+                            <div class="song-img">
+                                <img src="./img/sinister.jpeg" alt="">
+                                <div class="overlay"><i class="far fa-play-circle"></i></div>
+                            </div>
+                            <h3>Sinister</h3>
+                            <p>Subtitle</p>
+                        </li>
+                    </ul>
+                </section>
+                <section class="content-album">
+                    <h2>Creato per John Doe</h2>
+                    <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+                    <ul class="album-list">
+                        <li class="song">
+                            <div class="song-img">
+                                <img src="./img/radar.jpeg" alt="">
+                                <div class="overlay"><i class="far fa-play-circle"></i></div>
+                            </div>
+                            <h3>Release Radar</h3>
+                        </li>
+                        <li class="song">
+                            <div class="song-img">
+                                <img src="./img/mixdaily.jpeg" alt="">
+                                <div class="overlay"><i class="far fa-play-circle"></i></div>
+                            </div>
+                            <h3>Daily Mix 1</h3>
+                        </li>
+                    </ul>
+                </section>
+                <section class="content-album">
+                    <h2>Artisti più popolari</h2>
+                    <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+                    <ul class="album-list">
+                        <li class="song">
+                            <div class="song-img">
+                                <img class="round-img" src="./img/youg.jpeg" alt="">
+                                <div class="overlay"><i class="far fa-play-circle"></i></div>
+                            </div>
+                            <h3>Lana del Rey</h3>
+                        </li>
+                        <li class="song">
+                            <div class="song-img">
+                                <img class="round-img" src="./img/einaudi.jpeg" alt="">
+                                <div class="overlay"><i class="far fa-play-circle"></i></div>
+                            </div>
+                            <h3>Ludovico Einaudi</h3>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!--PLAYER-->
+    <footer>
+        <div class="all-player flex">
+
+            <!--left sec-->
+            <section class="left-player flex">
+                <img src="./img/sinister.jpeg" alt="">
+                <div>
+                    <h4>Sinister</h4>
+                    <h5>Paranormal</h5>
+                </div>
+                <div class="left-icons">
+                    <a href=""><i class="far fa-heart"></i></a>
+                    <a href=""><i class="far fa-folder"></i></a>
+                </div>
+            </section>
+
+            <!--center sec-->
+            <section class="center-player flex col">
+                <div class="mid-icons">
+                    <a href=""><i class="fas fa-random"></i></a>
+                    <a href=""><i class="fas fa-step-backward"></i></a>
+                    <a href=""><i class="far fa-play-circle"></i></a>
+                    <a href=""><i class="fas fa-step-forward"></i></a>
+                    <a href=""><i class="fas fa-redo-alt"></i></a>
+                </div>
+                <div class="player-time flex">
+                    <div class="time-left">0.25</div>
+                    <div class="timed">
+                        <div class="timed-marker"></div>                   
+                    </div>
+                    <div class="time-right">4.25</div>
+                </div>
+            </section>
+
+            <!--right sec-->
+            <section class="right-player flex">
+                <div class="right-icons">
+                    <a href=""><i class="fas fa-list-ul"></i></a>
+                    <a href=""><i class="fas fa-desktop"></i></a>
+                    <a href=""><i class="fas fa-volume-up"></i></a>                   
+                </div>
+                <div class="timed-2">
+                    <div class="timed-marker-2"></div>
+                </div>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>
